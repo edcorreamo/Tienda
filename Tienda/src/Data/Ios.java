@@ -5,10 +5,7 @@
  */
 package Data;
 
-/**
- *
- * @author Prometeo
- */
+
 public class Ios extends Tablet {
     String nombreComercial;
     float version;

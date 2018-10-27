@@ -12,14 +12,14 @@ public class Computador extends ArticuloElectronico{
         super(color, marca, precio);
         setProcesador(procesador);
         setRam(ram);
-        this.discoDuro = discoDuro;
-        this.tipo = tipo;
+        setDiscoDuro(discoDuro);
+        setTipo(tipo);
     }
     public Computador() {
-        this.procesador = null;
-        this.ram = null;
-        this.discoDuro = -1;
-        this.tipo = null;
+      setProcesador(null);
+       setRam(null);
+       setDiscoDuro(-1);
+        setTipo(null);
     }
 
    

@@ -9,14 +9,14 @@ public class Portatil extends Computador {
 
     public Portatil(String cargador, String bateria, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
         super(procesador, ram, discoDuro, tipo, color, marca, precio);
-        this.cargador = cargador;
-        this.bateria = bateria;
-        this.unidadCD = unidadCD;
+        setCargador(cargador);
+        setBateria(bateria);
+        setUnidadCD(unidadCD);
     }
     public Portatil() {
-        this.cargador = null;
-        this.bateria = null;
-        this.unidadCD = false;
+        setCargador(null);
+        setBateria(null);
+        setUnidadCD(false);
     }
 
   

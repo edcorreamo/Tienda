@@ -1,6 +1,5 @@
 
 package Data;
-//prueba
 
 public class Android extends Tablet{
     float versionAndorid;
@@ -26,6 +25,8 @@ public class Android extends Tablet{
         this.numeroDeSalidas = numeroDeSalidas;
         this.audifonos = audifonos;
     }
+
+  
     
     
     

@@ -9,19 +9,19 @@ public class ComputadorMesa extends Computador{
 
     public ComputadorMesa(boolean integrado, String pantalla, boolean tecladoEspecial, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
         super(procesador, ram, discoDuro, tipo, color, marca, precio);
-        this.integrado = integrado;
-        this.pantalla = pantalla;
-        this.tecladoEspecial = tecladoEspecial;
+        setIntegrado(integrado);
+        setPantalla(pantalla);
+        setTecladoEspecial(tecladoEspecial);
     }
     public ComputadorMesa(boolean integrado, String pantalla, boolean tecladoEspecial) {
-        this.integrado = integrado;
-        this.pantalla = pantalla;
-        this.tecladoEspecial = tecladoEspecial;
+        setIntegrado(integrado);
+       setPantalla(pantalla);
+        setTecladoEspecial(tecladoEspecial);
     }
     public ComputadorMesa() {
-        this.integrado = false;
-        this.pantalla = "articulo no asingnado";
-        this.tecladoEspecial = false;
+        setIntegrado(false);
+        setPantalla("articulo no asingnado");
+        setTecladoEspecial(false);
     }
 
    
