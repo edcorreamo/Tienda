@@ -7,23 +7,23 @@ public class Android extends Tablet{
     boolean audifonos;
 
     public Android(float versionAndorid, int numeroDeSalidas, boolean audifonos) {
-        this.versionAndorid = versionAndorid;
-        this.numeroDeSalidas = numeroDeSalidas;
-        this.audifonos = audifonos;
+        setVersionAndroid(versionAndorid);
+        setNumeroDeSalidas(numeroDeSalidas);
+        setAudifonos(audifonos);
     }
 
     public Android(float versionAndorid, int numeroDeSalidas, boolean audifonos, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
         super(pantalla, espacialesParaLectura, referencia, color, marca, precio);
-        this.versionAndorid = versionAndorid;
-        this.numeroDeSalidas = numeroDeSalidas;
-        this.audifonos = audifonos;
+        setVersionAndroid(versionAndorid);
+        setNumeroDeSalidas(numeroDeSalidas);
+        setAudifonos(audifonos);
     }
 
     public Android(float versionAndorid, int numeroDeSalidas, boolean audifonos, float pantalla, boolean espacialesParaLectura, String referencia) {
         super(pantalla, espacialesParaLectura, referencia);
-        this.versionAndorid = versionAndorid;
-        this.numeroDeSalidas = numeroDeSalidas;
-        this.audifonos = audifonos;
+        setVersionAndroid(versionAndorid);
+        setNumeroDeSalidas(numeroDeSalidas);
+        setAudifonos(audifonos);
     }
 
   

@@ -23,15 +23,15 @@ public class Tablet extends ArticuloElectronico{
 
     public Tablet(float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
         super(color, marca, precio);
-        this.pantalla = pantalla;
-        this.espacialesParaLectura = espacialesParaLectura;
-        this.referencia = referencia;
+        setPantalla(pantalla);
+        setEspecialesParaLectura(espacialesParaLectura);
+        setReferencia(referencia);
     }
 
     public Tablet(float pantalla, boolean espacialesParaLectura, String referencia) {
-        this.pantalla = pantalla;
-        this.espacialesParaLectura = espacialesParaLectura;
-        this.referencia = referencia;
+        setPantalla(pantalla);
+        setEspecialesParaLectura(espacialesParaLectura);
+        setReferencia(referencia);
     }
     
     public void setPantalla(float pantalla){

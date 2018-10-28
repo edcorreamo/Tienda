@@ -12,31 +12,31 @@ public class Ios extends Tablet {
     int anioLanzamiento;
 
     public Ios(String nombreComercial, float version, int anioLanzamiento) {
-        this.nombreComercial = nombreComercial;
-        this.version = version;
-        this.anioLanzamiento = anioLanzamiento;
+        setNombreComercial(nombreComercial);
+        setVersion(version);
+        setAnioDeLanzamiento(anioLanzamiento);
     }
 
     public Ios(String nombreComercial, float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
         super(pantalla, espacialesParaLectura, referencia, color, marca, precio);
-        this.nombreComercial = nombreComercial;
-        this.version = version;
-        this.anioLanzamiento = anioLanzamiento;
+        setNombreComercial(nombreComercial);
+        setVersion(version);
+        setAnioDeLanzamiento(anioLanzamiento);
     }
 
     public Ios(String nombreComercial, float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia) {
         super(pantalla, espacialesParaLectura, referencia);
-        this.nombreComercial = nombreComercial;
-        this.version = version;
-        this.anioLanzamiento = anioLanzamiento;
+        setNombreComercial(nombreComercial);
+        setVersion(version);
+        setAnioDeLanzamiento(anioLanzamiento);
     }
     public Ios(){
-    this.nombreComercial = null;
-        this.version = -1;
-        this.anioLanzamiento = -1;
+    setNombreComercial(null);
+        setVersion(-1);
+        setAnioDeLanzamiento(-1);
     }
     
-    public void setNombrecomercial(String nombreComercial){
+    public void setNombreComercial(String nombreComercial){
     this.nombreComercial=nombreComercial;
     }
     public void setVersion(float version){
