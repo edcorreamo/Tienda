@@ -25,14 +25,6 @@ public class Android extends Tablet{
         setNumeroDeSalidas(numeroDeSalidas);
         setAudifonos(audifonos);
     }
-
-  
-    
-    
-    
-    
-    
-    
    public Android(){
     setVersionAndroid(-1);
     setNumeroDeSalidas(-1);
