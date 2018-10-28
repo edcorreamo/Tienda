@@ -29,6 +29,7 @@ return x;
         System.out.println("\n|||||||||||||||||||||");
         System.out.println("1. Computador Mesa");
         System.out.println("2. Computador Portatil");
+        System.out.println("3. regresar al menú anterior");
         System.out.println("0. Salir");
         System.out.println("|||||||||||||||||||||");
       
@@ -37,6 +38,44 @@ return x;
         System.out.println("\n|||||||||||||||||||||");
         System.out.println("1. Android");
         System.out.println("2. Ios");
+        System.out.println("3. regresar al menú anterior");
+        System.out.println("0. Salir");
+        System.out.println("|||||||||||||||||||||");
+      
+ }
+       public static void menu4(){
+        System.out.println("\n|||||||||||||||||||||");
+        System.out.println("1. Version antigua");
+        System.out.println("2. version nueva");
+        System.out.println("3. regresar al menú anterior");
+        System.out.println("0. Salir");
+        System.out.println("|||||||||||||||||||||");
+      
+ }
+       public static void menu5(){
+        System.out.println("\n|||||||||||||||||||||");
+        System.out.println("1. IOS gama alta");
+        System.out.println("2. IOS gama baja");
+        System.out.println("3. regresar al menú anterior");
+        System.out.println("0. Salir");
+        System.out.println("|||||||||||||||||||||");
+      
+ }
+       
+       public static void menu6(){
+        System.out.println("\n|||||||||||||||||||||");
+        System.out.println("1. Portatil gamer");
+        System.out.println("2. Portatil basico");
+        System.out.println("3. regresar al menú anterior");
+        System.out.println("0. Salir");
+        System.out.println("|||||||||||||||||||||");
+      
+ }
+       public static void menu7(){
+        System.out.println("\n|||||||||||||||||||||");
+        System.out.println("1. computador de mesa para hogares");
+        System.out.println("2. pomputadores para oficina");
+        System.out.println("3. regresar al menú anterior");
         System.out.println("0. Salir");
         System.out.println("|||||||||||||||||||||");
       
