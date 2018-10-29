@@ -14,9 +14,9 @@ return x;
     
 public static void saludo(){
     
-    System.out.println("Bienvenido a la su mejor tienda de articulos electronicos");
-        System.out.println("Acontinuacion se le presenta un menú de opciones para que pueda "
-                         + "\nvisualizar los distintos productos con los que comtamos. Escoja el numero "
+    System.out.println("Bienvenido a la mejor tienda de articulos electronicos");
+        System.out.println("A continuacion se le presenta un menú de opciones para que pueda "
+                         + "\nvisualizar los distintos productos con los que contamos. Escoja el numero "
                          + "\ncorrespondiente a su opción: \n");
         
 
@@ -81,7 +81,7 @@ public static void saludo(){
        public static void menu7(){
         System.out.println("\n|||||||||||||||||||||");
         System.out.println("1. computador de mesa para hogares");
-        System.out.println("2. pomputadores para oficina");
+        System.out.println("2. computadores para oficina");
         System.out.println("3. regresar al menú anterior");
         System.out.println("0. Salir");
         System.out.println("|||||||||||||||||||||");
