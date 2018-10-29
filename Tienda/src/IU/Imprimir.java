@@ -12,11 +12,18 @@ int x=entrada.nextInt();
 return x;
 }
     
-    public static void menu(){
-        System.out.println("Bienvenido a la su mejor tienda de articulos electronicos");
+public static void saludo(){
+    
+    System.out.println("Bienvenido a la su mejor tienda de articulos electronicos");
         System.out.println("Acontinuacion se le presenta un menú de opciones para que pueda "
                          + "\nvisualizar los distintos productos con los que comtamos. Escoja el numero "
                          + "\ncorrespondiente a su opción: \n");
+        
+
+
+}
+
+    public static void menu(){
         
         System.out.println("1. Computador");
         System.out.println("2. Tablet");
