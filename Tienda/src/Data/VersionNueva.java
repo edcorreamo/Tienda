@@ -68,7 +68,7 @@ return this.recibeBono;
 @Override
 public String toString(){
 String cadena1=super.toString();
-String cadena="/nel celular tiene doble camar: "+getDobleCamara()+"/ncontiene los siguentes accesorios: "+getAccesorios()+"/nrecibe bono de regalo?: "+getRecibeBono(); 
+String cadena="\nel celular tiene doble camara: "+getDobleCamara()+"\ncontiene los siguentes accesorios: "+getAccesorios()+"\nrecibe bono de regalo?: "+getRecibeBono()+"\n  \n"; 
 return cadena1+cadena;
 }
     

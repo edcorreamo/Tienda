@@ -60,7 +60,7 @@ public class Android extends Tablet{
     @Override
     public String toString(){
     String cadena1=super.toString();
-    String cadena="\nnombre Comercial :"+getVersionAndroid()+"\nversion : "+getNumeroDeSalidas()+"\nreferencia:"+getAudifonos();
+    String cadena="\nversion android :"+getVersionAndroid()+"\nnuemro de salidas : "+getNumeroDeSalidas()+"\ntiene audifonos"+getAudifonos();
     return cadena1+cadena;
     }
     

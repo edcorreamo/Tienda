@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import Data.VersionAntigua;
 import Data.VersionAntigua;
 import Data.IosGAlta;
+import Data.VersionNueva;
+import java.util.HashSet;
 public class Tienda {
     
     
@@ -39,8 +41,23 @@ public class Tienda {
         andoridAntiguos.add(Huawei);
         andoridAntiguos.add(lenovoLegion);
         
-        
-        
+    
+    // creasion del hashSet
+    HashSet<VersionNueva> androidNuevos=new HashSet();
+    
+    //instanciacion de las versiones nuevas de android
+    //public VersionNueva(boolean dobleCamara, String accesorios, boolean recibeBono, float versionAndorid, int numeroDeSalidas, boolean audifonos, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
+    VersionNueva samsungJ5 =new VersionNueva(true,"viene con cargador y con estuche",true,8.1f,3,true,6.5f,true,"samsung J5","negro","sansung",1200000f);
+    VersionNueva motorolaG3 =new VersionNueva(true,"parlante",true,7.1f,3,true,5.5f,false,"G5","negro","Mortorola",800000f);
+    VersionNueva kalleyInfinx =new VersionNueva(true,"protector de pantalla y estuche",true,8.1f,3,true,6.5f,false,"infinix","blanco","Kaley",600000f);
+    VersionNueva lenovoShark =new VersionNueva(true,"sin accesorios extra",true,7.3f,3,true,6.5f,true,"Shark","blanco","lenovo",750000f);
+
+    //agregar al hashset
+    androidNuevos.add(samsungJ5);        
+    androidNuevos.add(motorolaG3);        
+    androidNuevos.add(kalleyInfinx);        
+    androidNuevos.add(lenovoShark);      
+    
         
         
        Imprimir.saludo();
@@ -118,7 +135,7 @@ public class Tienda {
                                    break;
                             case 2:System.out.println("\nversion nueva:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(androidNuevos);
                                    System.out.println("---------\n");
                                    break;
                             case 0: break;
