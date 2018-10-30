@@ -52,7 +52,8 @@ public class ComputadoresHogar extends ComputadorMesa {
     public String toString() {
         String cadena = super.toString();
         String cadena2="\nPromoción con impresora: "+getPromocionConImpresora()+"\nForro: "+getForro() +"\nParlantes incluidos: "+getParlantesIncluidos();
-        return cadena+cadena2;
+        String cadena3="\n";
+        return cadena+cadena2+cadena3;
     }
     
     

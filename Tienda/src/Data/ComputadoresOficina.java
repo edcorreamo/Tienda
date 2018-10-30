@@ -52,7 +52,8 @@ public class ComputadoresOficina extends ComputadorMesa {
     public String toString() {
         String cadena = super.toString();
         String cadena2="\nPantalla Led: "+getPantallaLed()+"\nLicencias de Oficina: "+getLicenciasOficina() +"\nAlto rendimiento: "+getAltoRendimiento();
-        return cadena+cadena2;
+        String cadena3="\n";
+        return cadena+cadena2+cadena3;
     }
     
     

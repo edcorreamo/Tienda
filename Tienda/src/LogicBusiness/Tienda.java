@@ -8,6 +8,8 @@ import Data.Android;
 import Data.Portatil;
 import Data.Tablet;
 import Data.ComputadorMesa;
+import Data.ComputadoresHogar;
+import Data.ComputadoresOficina;
 import java.util.ArrayList;
 import Data.VersionAntigua;
 import Data.VersionAntigua;
@@ -72,6 +74,16 @@ public class Tienda {
     GamaAltaIOS.put("231",ios12);
     
     
+    HashSet<ComputadoresOficina> pcOficina=new HashSet<ComputadoresOficina>();
+    
+    ComputadoresOficina lenovov310z = new ComputadoresOficina (true, true, true, true, "19,5 in", false, "Intel Core i5-7400", "4GB", 1000, "Lenovo V310z", "negro", "Lenovo", 2790000);
+    ComputadoresOficina vostro3267 = new ComputadoresOficina (false, true, false, false, "18 in", false, "Intel Core i3-6100", "4GB", 1000, "Vostro 3267", "negro", "Dell", 1820000);
+    ComputadoresOficina lg082 = new ComputadoresOficina (true, true, true, false, "20 in", true, "Intel pentium dual core G-2360", "4GB", 1000, "LG082EL12AK16LCO", "negro", "LG", 1129900);
+    
+    pcOficina.add(lg082);
+    pcOficina.add(lenovov310z);
+    pcOficina.add(vostro3267);
+    
        Imprimir.saludo();
        Imprimir.menu();
        
@@ -100,7 +112,7 @@ public class Tienda {
                                    break;
                             case 2:System.out.println("\nComputadores para oficinas:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(pcOficina);
                                    System.out.println("---------\n");
                                    break;
                             case 0: break;
