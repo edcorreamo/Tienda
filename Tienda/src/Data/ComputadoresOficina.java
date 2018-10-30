@@ -1,7 +1,7 @@
 
 package Data;
 
-public final class ComputadoresOficina extends ComputadorMesa {
+public class ComputadoresOficina extends ComputadorMesa {
     private boolean pantallaLed;
     private boolean licenciasOficina;
     private boolean altoRendimiento;

@@ -64,7 +64,7 @@ public class Tienda {
                         Imprimir.menu7();
                         h=Imprimir.leerPantalla();
                         switch(h){
-                            case 1:System.out.println("\nComputadores PARA EL HOGAR:");
+                            case 1:System.out.println("\nComputadores para el hogar:");
                                    System.out.println("----------");
                                    System.out.println();
                                    System.out.println("---------\n");
