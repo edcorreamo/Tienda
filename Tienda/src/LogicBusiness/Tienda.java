@@ -13,6 +13,7 @@ import Data.VersionAntigua;
 import Data.VersionAntigua;
 import Data.IosGAlta;
 import Data.VersionNueva;
+import java.util.HashMap;
 import java.util.HashSet;
 public class Tienda {
     
@@ -27,7 +28,7 @@ public class Tienda {
        
        
        ArrayList<VersionAntigua>andoridAntiguos=new ArrayList<VersionAntigua>();
-       
+    //arraylist   
     // VersionAntigua(boolean enPromocion, String camaraFrontal, boolean memoriaExterna, float versionAndorid, int numeroDeSalidas, boolean audifonos, float pantalla, boolean espacialesParaLectura, String referencia) 
         VersionAntigua Motorola3g=new VersionAntigua(true,"de 4 megapixeles",true,  6.7f,2,true,6.4f,false,"motorola genuine","negro","Motorola",120000);
         VersionAntigua Motorolad=new VersionAntigua(false,"no",true,  5.2f,2,true,6.4f,false,"motorola D","rojo","Motorola",100000);
@@ -43,7 +44,7 @@ public class Tienda {
         
     
     // creasion del hashSet
-    HashSet<VersionNueva> androidNuevos=new HashSet();
+    HashSet<VersionNueva> androidNuevos=new HashSet<VersionNueva>();
     
     //instanciacion de las versiones nuevas de android
     //public VersionNueva(boolean dobleCamara, String accesorios, boolean recibeBono, float versionAndorid, int numeroDeSalidas, boolean audifonos, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
@@ -58,8 +59,19 @@ public class Tienda {
     androidNuevos.add(kalleyInfinx);        
     androidNuevos.add(lenovoShark);      
     
-        
-        
+//hashmap    
+    HashMap<String,IosGAlta> GamaAltaIOS=new HashMap<String ,IosGAlta>();
+    //public IosGAlta(String tipoDeSeguro, String adicionales, String colorEstuche, String nombreComercial, float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
+
+    IosGAlta ipadPro=new IosGAlta("seguro completo, hurto, perdida","nada adicional","rojo o blanco","IPAD PRO",6.2f,2018,12.0f,true,"IPAD","blanco","APPLE",1500000);
+    IosGAlta pencil=new IosGAlta("seguro solo por pérdita total","bono de descuento en audifonos","blanco","IPAD Pencil",8.2f,2017,15.0f,true,"IPAD","blanco , o gris","APPLE",1300000);
+    IosGAlta ios12=new IosGAlta("seguro completo, hurto, perdida y bono para cambio en dos años","protector de rayones","negro","IOS 12",7.5f,2018,8.0f,false,"IPAD","rojo","APPLE",1000000);
+    
+    GamaAltaIOS.put("123",ipadPro);
+    GamaAltaIOS.put("321",pencil);
+    GamaAltaIOS.put("231",ios12);
+    
+    
        Imprimir.saludo();
        Imprimir.menu();
        
@@ -150,7 +162,7 @@ public class Tienda {
                         switch(k){
                             case 1:System.out.println("\nIOS gama alta:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(GamaAltaIOS);
                                    System.out.println("---------\n");
                                    break;
                             case 2:System.out.println("\nIOS gama Baja:");

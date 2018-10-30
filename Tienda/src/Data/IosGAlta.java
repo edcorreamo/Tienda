@@ -70,7 +70,7 @@ public class IosGAlta extends Ios{
     @Override
     public String toString(){    
     String cadena1=super.toString();
-    String cadena2="\nel celular tiene un incluido un tipo de seguro :"+getTipoDeSeguro()+"\naccesorios adiconales incluidos : "+getAdicionales()+"\nel color del estuche incluido es:"+getColorEstuche();
+    String cadena2="\nel celular tiene un incluido un tipo de seguro :"+getTipoDeSeguro()+"\naccesorios adiconales incluidos : "+getAdicionales()+"\nel color del estuche incluido es:"+getColorEstuche()+"\n \n";
     return cadena1+cadena2;
     }
     
