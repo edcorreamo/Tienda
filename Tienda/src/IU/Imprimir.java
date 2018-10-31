@@ -80,8 +80,8 @@ public static void saludo(){
  }
        public static void menu7(){
         System.out.println("\n|||||||||||||||||||||");
-        System.out.println("1. computador de mesa para hogares");
-        System.out.println("2. computadores para oficina");
+        System.out.println("1. Computador de mesa para hogares");
+        System.out.println("2. Computadores para oficina");
         System.out.println("3. regresar al menú anterior");
         System.out.println("0. Salir");
         System.out.println("|||||||||||||||||||||");

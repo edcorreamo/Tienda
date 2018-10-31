@@ -73,16 +73,28 @@ public class Tienda {
     GamaAltaIOS.put("321",pencil);
     GamaAltaIOS.put("231",ios12);
     
-    
+    // Computadores de Oficina
     HashSet<ComputadoresOficina> pcOficina=new HashSet<ComputadoresOficina>();
     
-    ComputadoresOficina lenovov310z = new ComputadoresOficina (true, true, true, true, "19,5 in", false, "Intel Core i5-7400", "4GB", 1000, "Lenovo V310z", "negro", "Lenovo", 2790000);
-    ComputadoresOficina vostro3267 = new ComputadoresOficina (false, true, false, false, "18 in", false, "Intel Core i3-6100", "4GB", 1000, "Vostro 3267", "negro", "Dell", 1820000);
-    ComputadoresOficina lg082 = new ComputadoresOficina (true, true, true, false, "20 in", true, "Intel pentium dual core G-2360", "4GB", 1000, "LG082EL12AK16LCO", "negro", "LG", 1129900);
+    ComputadoresOficina lenovov310z = new ComputadoresOficina (true, true, true, true, "19.5 Pulgadas", false, "Intel Core i5-7400", "4GB", 1000, "Lenovo V310z", "negro", "Lenovo", 2790000);
+    ComputadoresOficina vostro3267 = new ComputadoresOficina (false, true, false, false, "18 Pulgadas", false, "Intel Core i3-6100", "4GB", 1000, "Vostro 3267", "negro", "Dell", 1820000);
+    ComputadoresOficina lg082 = new ComputadoresOficina (true, true, true, false, "20 Pulgadas", true, "Intel pentium dual core G-2360", "4GB", 1000, "LG082EL12AK16LCO", "negro", "LG", 1129900);
     
     pcOficina.add(lg082);
     pcOficina.add(lenovov310z);
     pcOficina.add(vostro3267);
+    
+    // Computadores para el hogar
+    HashMap<String,ComputadoresHogar> pcHogar=new HashMap<String ,ComputadoresHogar>();
+    
+//boolean promocionConImpresora, boolean forro, boolean parlantesIncluidos, boolean integrado, String pantalla, boolean tecladoEspecial, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio
+    ComputadoresHogar hp20c=new ComputadoresHogar (false, false, true, true, "20 Pulgadas", false, "Intel Core i5 7200U", "4GB", 1000, "HP 20-c405la", "Negro", "HP", 1399000);
+    ComputadoresHogar acersr11=new ComputadoresHogar (false, true, false, true, "21.5 Pulgadas", false, "Intel Core i3 8130U", "4GB", 1000, "ACER - SR11", "Plata", "Acer", 1700000);
+    ComputadoresHogar lenovo520=new ComputadoresHogar (true, false, false, true, "2.5 Pulgadas", true, "Intel Pentium 4415U 2.3G 2C", "4GB", 1000, "Lenovo - 520 22IKU", "Plata", "Lenovo", 1459000);
+    
+    pcHogar.put("Opcion 1",hp20c);
+    pcHogar.put("Opcion 2",acersr11);
+    pcHogar.put("Opcion 3",lenovo520);
     
        Imprimir.saludo();
        Imprimir.menu();
@@ -107,7 +119,7 @@ public class Tienda {
                         switch(h){
                             case 1:System.out.println("\nComputadores para el hogar:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(pcHogar);
                                    System.out.println("---------\n");
                                    break;
                             case 2:System.out.println("\nComputadores para oficinas:");
