@@ -1,51 +1,51 @@
 
 package Data;
 
-public class IosGBaja extends Ios {
+public class IosGMedia extends Ios {
 
  
- private String tipoCargador;
- private String programasGratis;
+ private String bateria;
+ private String camara;
  private boolean vidrioTemplado;
 
-    public IosGBaja(String tipoCargador, String programasGratis, boolean vidrioTemplado, String nombreComercial, float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
+    public IosGMedia(String bateria, String camara, boolean vidrioTemplado, String nombreComercial, float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio) {
         super(nombreComercial, version, anioLanzamiento, pantalla, espacialesParaLectura, referencia, color, marca, precio);
-        setTipoCargador(tipoCargador);
-        setProgramasGratis(programasGratis);
+        setTipoCargador(bateria);
+        setProgramasGratis(camara);
         setVidrioTemplado(vidrioTemplado);
     }
 
-    public IosGBaja(String tipoCargador, String programasGratis, boolean vidrioTemplado) {
-        setTipoCargador(tipoCargador);
-        setProgramasGratis(programasGratis);
+    public IosGMedia(String bateria, String camara, boolean vidrioTemplado) {
+        setTipoCargador(bateria);
+        setProgramasGratis(camara);
         setVidrioTemplado(vidrioTemplado);
     }
 
-    public IosGBaja() {
+    public IosGMedia() {
         setTipoCargador("Indefinidido");
         setProgramasGratis("Indefinido");
         setVidrioTemplado(false);
         
     }
 
-    public void setTipoCargador(String tipoCargador) {
-        this.tipoCargador = tipoCargador;
+    public void setTipoCargador(String bateria) {
+        this.bateria = bateria;
     }
 
-    public void setProgramasGratis(String programasGratis) {
-        this.programasGratis = programasGratis;
+    public void setProgramasGratis(String camara) {
+        this.camara = camara;
     }
 
     public void setVidrioTemplado(boolean vidrioTemplado) {
         this.vidrioTemplado = vidrioTemplado;
     }
 
-    public String getTipoCargador() {
-        return tipoCargador;
+    public String getBateria() {
+        return bateria;
     }
 
-    public String getProgramasGratis() {
-        return programasGratis;
+    public String getCamara() {
+        return camara;
     }
 
     public boolean getVidrioTemplado() {
@@ -55,7 +55,7 @@ public class IosGBaja extends Ios {
   @Override
     public String toString(){    
     String cadena1=super.toString();
-    String cadena2="\nTipo de Cargador :"+getTipoCargador()+"\nProgramas Gratuitos : "+getProgramasGratis()+"\nVidrio Templado: "+getVidrioTemplado();
+    String cadena2="\nTipo de Cargador :"+getBateria()+"\nBateria : "+getCamara()+"\nVidrio Templado: "+getVidrioTemplado();
     return cadena1+cadena2;
  
     }

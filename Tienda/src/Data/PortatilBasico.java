@@ -2,18 +2,18 @@
 package Data;
 
 public class PortatilBasico extends Portatil{
-   private String salidasUSB;
+   private int salidasUSB;
     private boolean salidaHDMI;
     private boolean salidaVGA;
 
-    public PortatilBasico(String salidasUSB, boolean salidaHDMI, boolean salidaVGA, String cargador, String bateria, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
-        super(cargador, bateria, unidadCD, procesador, ram, discoDuro, tipo, color, marca, precio);
+    public PortatilBasico(int salidasUSB, boolean salidaHDMI, boolean salidaVGA, String sOperativo, String peso, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
+        super(sOperativo, peso, unidadCD, procesador, ram, discoDuro, tipo, color, marca, precio);
         setSalidasUSB(salidasUSB);
         setSalidaHDMI(salidaHDMI);
         setSalidaVGA(salidaVGA);
     }
 
-    public PortatilBasico(String salidasUSB, boolean salidaHDMI, boolean salidaVGA) {
+    public PortatilBasico(int salidasUSB, boolean salidaHDMI, boolean salidaVGA) {
         setSalidasUSB(salidasUSB);
         setSalidaHDMI(salidaHDMI);
         setSalidaVGA(salidaVGA);
@@ -22,7 +22,7 @@ public class PortatilBasico extends Portatil{
     public PortatilBasico() {
     }
 
-    public void setSalidasUSB(String salidasUSB) {
+    public void setSalidasUSB(int salidasUSB) {
         this.salidasUSB = salidasUSB;
     }
 
@@ -37,7 +37,7 @@ public class PortatilBasico extends Portatil{
     
     
 
-    public String getSalidasUSB() {
+    public int getSalidasUSB() {
         return salidasUSB;
     }
 

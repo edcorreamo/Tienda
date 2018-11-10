@@ -14,7 +14,7 @@ import Data.ComputadoresOficina;
 import Data.Tablet;
 import Data.Ios;
 import Data.IosGAlta;
-import Data.IosGBaja;
+import Data.IosGMedia;
 import Data.Android;
 import Data.VersionAntigua;
 import Data.VersionNueva;
@@ -67,42 +67,41 @@ public class Tienda {
     
     //By: Juan
     
-    //Array List IOSGAMABAJA
-    ArrayList<IosGBaja>iosGamaBaja=new ArrayList<IosGBaja>();
-   //public IosGBaja( float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio)
-    IosGBaja x= new IosGBaja("x","x",false,"x",1.0f,1,1.0f,false,"x","x","x",1);
-    IosGBaja y= new IosGBaja("x","x",false,"x",1.0f,1,1.0f,false,"x","x","x",1);
-    IosGBaja z= new IosGBaja("x","x",false,"x",1.0f,1,1.0f,false,"x","x","x",1);
-    IosGBaja w= new IosGBaja("x","x",false,"x",1.0f,1,1.0f,false,"x","x","x",1);
-    IosGBaja xx= new IosGBaja("x","x",false,"x",1.0f,1,1.0f,false,"x","x","x",1);
-    iosGamaBaja.add(x);
-    iosGamaBaja.add(y);
-    iosGamaBaja.add(z);
-    iosGamaBaja.add(w);
+    //Array List IOSGAMAMEDIA POR QUE ES QUE NO HAY BAJA ...JAJJA :D
+    ArrayList<IosGMedia>iosGamaMedia=new ArrayList<IosGMedia>();
+   //(String bateria, String camara, boolean vidrioTemplado, String nombreComercial, float version, int anioLanzamiento, float pantalla, boolean espacialesParaLectura, String referencia, String color, String marca, float precio)
+    IosGMedia ipadAir= new IosGMedia("1560 mAh","12 MP",true,"iPad Air",5.0f,2014,9.7f,true,"IPAD","gris","APPLE",842000);
+    IosGMedia ipad2= new IosGMedia("1300 mAh","5 MP",false,"iPad 2",3.1f,2011,8.5f,true,"IPAD","negro","APPLE",532000);
+    IosGMedia ipad= new IosGMedia("1200 mAh","5 MP",true,"iPad",7.2f,2011,1.0f,false,"IPAD","azul","APPLE",489000);
+    IosGMedia ipad3= new IosGMedia("1300 mAh","8 MP",false,"iPad 3",8.1f,2012,1.0f,false,"IPAD","blanco","APPLE",634000);
+    iosGamaMedia.add(ipadAir);
+    iosGamaMedia.add(ipad2);
+    iosGamaMedia.add(ipad);
+    iosGamaMedia.add(ipad3);
  
     //HasSet Portatil Basico
-     HashSet<PortatilBasico> portatilesBasicos=new HashSet<PortatilBasico>();
-    //(String salidasUSB, boolean salidaHDMI, boolean salidaVGA, String cargador, String bateria, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio)
-    PortatilBasico vvv= new PortatilBasico("",false,false,"","",false,"","",1,"","","",1.0f);
-    PortatilBasico vv= new PortatilBasico("",false,false,"","",false,"","",1,"","","",1.0f);
-    PortatilBasico v= new PortatilBasico("",false,false,"","",false,"","",1,"","","",1.0f);
-    PortatilBasico v1= new PortatilBasico("",false,false,"","",false,"","",1,"","","",1.0f);
-    portatilesBasicos.add(vvv);
-    portatilesBasicos.add(vv);
-    portatilesBasicos.add(v);
-    portatilesBasicos.add(v1);
+    HashSet<PortatilBasico> portatilesBasicos=new HashSet<PortatilBasico>();
+    //int salidasUSB, boolean salidaHDMI, boolean salidaVGA, String sOperativo, String peso, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio)
+    PortatilBasico portatilAsus= new PortatilBasico(2,true,true,"Windows 10","1500 gr",false,"Intel Core i3","4 GB",1024,"ASUS X540L","Dorado","ASUS",1098000.0f);
+    PortatilBasico portatilLenovo = new PortatilBasico(3,true,false,"Windows 10 Home","1100 gr",true,"Intel Pentium J4205","8 GB",1024,"All In One","Negro","Lenovo",958000.0f);
+    PortatilBasico portatilHp= new PortatilBasico(3,true,false,"FreeDos 2.0","1650 gr",false,"APU AMD E2","4 GB",500,"HP 245 G6","Blanco","HP",719000f);
+    PortatilBasico portatilDell= new PortatilBasico(2,false,false,"Windows 8","2100 gr",false,"Intel Core i3","4 GB",1024,"Inspion 14","ROJO","DELL",1384000.0f);
+    portatilesBasicos.add(portatilAsus);
+    portatilesBasicos.add(portatilLenovo);
+    portatilesBasicos.add(portatilHp);
+    portatilesBasicos.add(portatilDell);
     
     //TreeMap Portatil Gamer
      TreeMap<String,PortatilGamer> portatilesGamers=new TreeMap<String,PortatilGamer>();
-    // String targetaGrafica, int gigasdeVideo, String tipodeSonido, String cargador, String bateria, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio)
-    PortatilGamer xxxx=new PortatilGamer("",1,"","","",false, "","",1,"","","",1.0f);
-    PortatilGamer xxx=new PortatilGamer("",1,"","","",false, "","",1,"","","",1.0f);
-    PortatilGamer xx5=new PortatilGamer("",1,"","","",false, "","",1,"","","",1.0f);
-    PortatilGamer xx55=new PortatilGamer("",1,"","","",false,"","",1,"","","",1.0f);
-    portatilesGamers.put(xxxx.getMarca()+xxxx.getProcesador(),xxxx);
-    portatilesGamers.put(xxx.getMarca()+xxx.getProcesador(),xxx);
-    portatilesGamers.put(xx5.getMarca()+xx5.getProcesador(),xx5);
-    portatilesGamers.put(xx55.getMarca()+xx55.getProcesador(),xx55);
+    // (String targetaGrafica, int gigasdeVideo, String tipodeSonido, String sOperativo, String peso, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio)
+    PortatilGamer portatilAcer=new PortatilGamer("Nvidia GeForce GTX 1050 ",4,"No definido","Windows 10","2100 gr",true, "Intel Core i5 7300HQ","12 GB",1024,"VX-591G","Rojo y Negro","ACER",3560000.0f);
+    PortatilGamer portatilHP=new PortatilGamer("NVIDIA GeForce MX110",4,"No definido","Windaws 10","2000 gr",false, " Intel Core i5","8 GB ",1024,"HP 15-da0011la","Negro","HP",1749000.0f);
+    PortatilGamer portatilLenovo2=new PortatilGamer("NVIDIA GeForce GTX 1050",4,"No definido","Windows 10","2050 gr",true, "Intel i7-7700HQ","16 GB",2048,"Legion Y520 Gaming","Rojo","LENOVO",4497000.0f);
+    PortatilGamer portatilAsus2=new PortatilGamer("NVIDIA GeForce GTX 1050 ",4,"No definido","Windows 10","1900 gr",true,"Intel Core i5","8 GB",1024,"ASUS TUF Gaming FX504","Negro","ASUS",3190000.0f);
+    portatilesGamers.put(portatilAcer.getMarca()+portatilAcer.getProcesador(),portatilAcer);
+    portatilesGamers.put(portatilHP.getMarca()+portatilHP.getProcesador(),portatilHP);
+    portatilesGamers.put(portatilLenovo2.getMarca()+portatilLenovo2.getProcesador(),portatilLenovo2);
+    portatilesGamers.put(portatilAsus2.getMarca()+portatilAsus2.getProcesador(),portatilAsus2);
     
     
     //By: Carlos

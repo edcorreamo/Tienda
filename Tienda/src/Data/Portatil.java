@@ -1,46 +1,42 @@
 
 package Data;
 
-
 public class Portatil extends Computador {
-    String cargador;
-    String bateria;
+    String sOperativo;
+    String peso;
     boolean unidadCD;
 
-    public Portatil(String cargador, String bateria, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
+    public Portatil(String sOperativo, String peso, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
         super(procesador, ram, discoDuro, tipo, color, marca, precio);
-        setCargador(cargador);
-        setBateria(bateria);
+        setSOperativo(sOperativo);
+        setPeso(peso);
         setUnidadCD(unidadCD);
     }
     public Portatil() {
-        setCargador(null);
-        setBateria(null);
+        setSOperativo(null);
+        setPeso(null);
         setUnidadCD(false);
     }
 
-  
 
-  
-
-    public void setCargador(String cargador) {
-        this.cargador = cargador;
+    public void setSOperativo(String sOperativo) {
+        this.sOperativo = sOperativo;
     }
 
-    public void setBateria(String bateria) {
-        this.bateria = bateria;
+    public void setPeso(String peso) {
+        this.peso= peso;
     }
 
     public void setUnidadCD(boolean unidadCD) {
         this.unidadCD = unidadCD;
     }
 
-    public String getCargador() {
-        return this.cargador;
+    public String getsOperativo() {
+        return this.sOperativo;
     }
 
-    public String getBateria() {
-        return this.bateria;
+    public String getPeso() {
+        return this.peso;
     }
 
     public boolean getUnidadCD() {
@@ -49,7 +45,7 @@ public class Portatil extends Computador {
   @Override
     public String toString(){
         super.toString();
-        String cadena="\nCargador: "+getCargador()+"\nUnidad de CD: "+getUnidadCD()+"\nBateria: "+getBateria();
+        String cadena="\nCargador: "+getPeso()+"\nUnidad de CD: "+getUnidadCD()+"\nBateria: "+getsOperativo();
       return cadena; 
 }          
     

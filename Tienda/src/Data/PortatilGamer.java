@@ -7,8 +7,8 @@ public class PortatilGamer extends Portatil {
    private int gigasdeVideo;
    private String tipodeSonido;
 
-    public PortatilGamer(String targetaGrafica, int gigasdeVideo, String tipodeSonido, String cargador, String bateria, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
-        super(cargador, bateria, unidadCD, procesador, ram, discoDuro, tipo, color, marca, precio);
+    public PortatilGamer(String targetaGrafica, int gigasdeVideo, String tipodeSonido, String sOperativo, String peso, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio) {
+        super(sOperativo, peso, unidadCD, procesador, ram, discoDuro, tipo, color, marca, precio);
         setTargetaGrafica(targetaGrafica);
         setGigasdeVideo(gigasdeVideo);
         setTipodeSonido(tipodeSonido);
