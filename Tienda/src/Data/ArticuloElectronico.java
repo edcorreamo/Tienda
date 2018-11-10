@@ -1,7 +1,6 @@
 
 package Data;
 
-
 public class ArticuloElectronico {
    
     private String marca;

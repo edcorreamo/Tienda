@@ -55,7 +55,7 @@ public class IosGMedia extends Ios {
   @Override
     public String toString(){    
     String cadena1=super.toString();
-    String cadena2="\nTipo de Cargador :"+getBateria()+"\nBateria : "+getCamara()+"\nVidrio Templado: "+getVidrioTemplado();
+    String cadena2="\nBateria :"+getBateria()+"\nCamara : "+getCamara()+"\nVidrio Templado: "+getVidrioTemplado()+"\n...................";
     return cadena1+cadena2;
  
     }

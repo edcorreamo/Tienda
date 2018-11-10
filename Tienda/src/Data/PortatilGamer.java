@@ -49,7 +49,7 @@ public class PortatilGamer extends Portatil {
     @Override
     public String toString(){    
     String cadena1=super.toString();
-    String cadena2="\nTipo de Targeta Grafica :"+getTargetaGrafica()+"\nGigas de Video : "+getGigasdeVideo() +"\nTipo de Sonido: "+getTipodeSonido();
+    String cadena2="\nTipo de Targeta Grafica :"+getTargetaGrafica()+"\nGigas de Video : "+getGigasdeVideo() +"\nTipo de Sonido: "+getTipodeSonido()+"\n............."+"\n";
     return cadena1+cadena2;
  
     }  

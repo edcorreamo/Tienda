@@ -44,9 +44,9 @@ public class Portatil extends Computador {
     }
   @Override
     public String toString(){
-        super.toString();
-        String cadena="\nCargador: "+getPeso()+"\nUnidad de CD: "+getUnidadCD()+"\nBateria: "+getsOperativo();
-      return cadena; 
+        String cadena1=super.toString();
+        String cadena="\nPeso: "+getPeso()+"\nUnidad de CD: "+getUnidadCD()+"\nSistema Operativo: "+getsOperativo();
+      return cadena1+cadena; 
 }          
     
 }

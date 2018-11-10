@@ -18,8 +18,6 @@ public static void saludo(){
         System.out.println("A continuacion se le presenta un menú de opciones para que pueda "
                          + "\nvisualizar los distintos productos con los que contamos. Escoja el numero "
                          + "\ncorrespondiente a su opción: \n");
-        
-
 
 }
 
@@ -62,7 +60,7 @@ public static void saludo(){
        public static void menu5(){
         System.out.println("\n|||||||||||||||||||||");
         System.out.println("1. IOS gama alta");
-        System.out.println("2. IOS gama baja");
+        System.out.println("2. IOS gama media");
         System.out.println("3. regresar al menú anterior");
         System.out.println("0. Salir");
         System.out.println("|||||||||||||||||||||");

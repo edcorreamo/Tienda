@@ -65,7 +65,7 @@ public class Ios extends Tablet {
     @Override
     public String toString(){    
     String cadena1=super.toString();
-    String cadena2="\nnombre Comercial :"+getNombreComercial()+"\nversion : "+getVersion()+"\nreferencia:"+getAnioDeLanzamiento();
+    String cadena2="\nNombre Comercial :"+getNombreComercial()+"\nVersion : "+getVersion()+"\nAnio de lanzamiento:"+getAnioDeLanzamiento();
     return cadena1+cadena2;
     }
     

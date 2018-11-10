@@ -94,14 +94,14 @@ public class Tienda {
     //TreeMap Portatil Gamer
      TreeMap<String,PortatilGamer> portatilesGamers=new TreeMap<String,PortatilGamer>();
     // (String targetaGrafica, int gigasdeVideo, String tipodeSonido, String sOperativo, String peso, boolean unidadCD, String procesador, String ram, int discoDuro, String tipo, String color, String marca, float precio)
-    PortatilGamer portatilAcer=new PortatilGamer("Nvidia GeForce GTX 1050 ",4,"No definido","Windows 10","2100 gr",true, "Intel Core i5 7300HQ","12 GB",1024,"VX-591G","Rojo y Negro","ACER",3560000.0f);
-    PortatilGamer portatilHP=new PortatilGamer("NVIDIA GeForce MX110",4,"No definido","Windaws 10","2000 gr",false, " Intel Core i5","8 GB ",1024,"HP 15-da0011la","Negro","HP",1749000.0f);
-    PortatilGamer portatilLenovo2=new PortatilGamer("NVIDIA GeForce GTX 1050",4,"No definido","Windows 10","2050 gr",true, "Intel i7-7700HQ","16 GB",2048,"Legion Y520 Gaming","Rojo","LENOVO",4497000.0f);
-    PortatilGamer portatilAsus2=new PortatilGamer("NVIDIA GeForce GTX 1050 ",4,"No definido","Windows 10","1900 gr",true,"Intel Core i5","8 GB",1024,"ASUS TUF Gaming FX504","Negro","ASUS",3190000.0f);
-    portatilesGamers.put(portatilAcer.getMarca()+portatilAcer.getProcesador(),portatilAcer);
-    portatilesGamers.put(portatilHP.getMarca()+portatilHP.getProcesador(),portatilHP);
-    portatilesGamers.put(portatilLenovo2.getMarca()+portatilLenovo2.getProcesador(),portatilLenovo2);
-    portatilesGamers.put(portatilAsus2.getMarca()+portatilAsus2.getProcesador(),portatilAsus2);
+    PortatilGamer portatilAcer=new PortatilGamer("Nvidia GeForce GTX 1050 ",4,"No definido","Windows 10","2100gr",true, "Intel Core i5 7300HQ","12 GB",1024,"VX-591G","Rojo y Negro","ACER",3560000.0f);
+    PortatilGamer portatilHP=new PortatilGamer("NVIDIA GeForce MX110",4,"No definido","Windaws 10","2000gr",false, " Intel Core i5","8 GB ",1024,"HP 15-da0011la","Negro","HP",1749000.0f);
+    PortatilGamer portatilLenovo2=new PortatilGamer("NVIDIA GeForce GTX 1050",4,"No definido","Windows 10","2050gr",true, "Intel i7-7700HQ","16 GB",2048,"Legion Y520 Gaming","Rojo","LENOVO",4497000.0f);
+    PortatilGamer portatilAsus2=new PortatilGamer("NVIDIA GeForce GTX 1050 ",4,"No definido","Windows 10","1900gr",true,"Intel Core i5","8 GB",1024,"ASUS TUF Gaming FX504","Negro","ASUS",3190000.0f);
+    portatilesGamers.put(portatilAcer.getMarca()+portatilAcer.getPeso(),portatilAcer);
+    portatilesGamers.put(portatilHP.getMarca()+portatilHP.getPeso(),portatilHP);
+    portatilesGamers.put(portatilLenovo2.getMarca()+portatilLenovo2.getPeso(),portatilLenovo2);
+    portatilesGamers.put(portatilAsus2.getMarca()+portatilAsus2.getPeso(),portatilAsus2);
     
     
     //By: Carlos
@@ -125,7 +125,7 @@ public class Tienda {
     pcHogar.put("Opcion 2",acersr11);
     pcHogar.put("Opcion 3",lenovo520);
     
-      /* Imprimir.saludo();
+       Imprimir.saludo();
        Imprimir.menu();
        
        int q=0,p=0;
@@ -168,12 +168,12 @@ public class Tienda {
                         switch(i){
                             case 1:System.out.println("\nComputadores Gamer:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(portatilesGamers);
                                    System.out.println("---------\n");
                                    break;
                             case 2:System.out.println("\nComputadores Basico:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(portatilesBasicos);
                                    System.out.println("---------\n");
                                    break;
                             case 0:break;
@@ -195,7 +195,7 @@ public class Tienda {
                         switch(j){
                             case 1:System.out.println("\nversion antigua:");
                                    System.out.println("----------");
-                                   System.out.println(andoridAntiguos);
+                                   System.out.println(androidAntiguos);
                                    System.out.println("---------\n");
                                    break;
                             case 2:System.out.println("\nversion nueva:");
@@ -218,9 +218,9 @@ public class Tienda {
                                    System.out.println(GamaAltaIOS);
                                    System.out.println("---------\n");
                                    break;
-                            case 2:System.out.println("\nIOS gama Baja:");
+                            case 2:System.out.println("\nIOS gama Media:");
                                    System.out.println("----------");
-                                   System.out.println();
+                                   System.out.println(iosGamaMedia);
                                    System.out.println("---------\n");
                                    break;
                             case 0: break;
@@ -243,11 +243,8 @@ public class Tienda {
             break;
         }
        }while(p!=0);
-   */  
-     }
-
-    
-       
-    }
+ 
+     }   
+ }
     
 

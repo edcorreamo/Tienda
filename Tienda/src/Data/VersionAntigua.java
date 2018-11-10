@@ -59,7 +59,8 @@ return this.memoriaExterna;
 @Override
     public String toString(){
     String cadena1=super.toString();
-    String cadena="\nestá en promocion :"+getEnPromocion()+"\ntipo de camara frontal: "+getCamaraFrontal()+"\nse entrega con memoria externa; "+getMemoriaExterna();
+    String cadena="\nestá en promocion :"+getEnPromocion()+"\ntipo de camara frontal: "+getCamaraFrontal()+"\nse entrega con memoria externa; "+getMemoriaExterna()+"\n.............";
+    
     return cadena1+cadena;
     }
         

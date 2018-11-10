@@ -34,9 +34,6 @@ public class PortatilBasico extends Portatil{
         this.salidaVGA = salidaVGA;
     }
     
-    
-    
-
     public int getSalidasUSB() {
         return salidasUSB;
     }
@@ -57,10 +54,9 @@ public class PortatilBasico extends Portatil{
       @Override
     public String toString(){    
     String cadena1=super.toString();
-    String cadena2="\nTipo de Salida USB :"+getSalidasUSB()+"\nSalida HDMI : "+ getSalidaHDMI()+"\nVidrio Templado: "+getSalidaVGA();
+    String cadena2="\nNumero de Salidas USB :"+getSalidasUSB()+"\nSalida HDMI : "+ getSalidaHDMI()+"\nVidrio Templado: "+getSalidaVGA()+"\n...............";
     return cadena1+cadena2;
  
     }  
-    
-     
+
 }

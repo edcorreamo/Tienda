@@ -65,7 +65,7 @@ public class Tablet extends ArticuloElectronico{
     @Override
     public String toString(){
     String cadena1=super.toString();
-    String cadena2="\nreferencia :"+getReferencia()+"\npantalla: "+getPantalla()+"\nreferencia:"+getEspecialesParaLectura();
+    String cadena2="\nreferencia :"+getReferencia()+"\npantalla: "+getPantalla()+"\nEspaciales para lectura:"+getEspecialesParaLectura();
     return cadena1+cadena2;
     }
     

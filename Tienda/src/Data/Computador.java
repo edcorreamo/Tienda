@@ -60,11 +60,8 @@ public class Computador extends ArticuloElectronico{
     @Override
     public String toString (){
         String cadena1=super.toString();
-        String cadena= "\nTipo: "+getTipo()+"\nProcesador: "+getProcesador()
-                +"\nRam: "+getRam()+"\nDisco Duro: "+getDiscoDuro();
-        String result=cadena1+cadena;
-        return result; 
+        String cadena2= "\nTipo: "+getTipo()+"\nProcesador: "+getProcesador() +"\nRam: "+getRam()+"\nDisco Duro (GB: "+getDiscoDuro();
+        return cadena1+cadena2;
 }
-    
-    
+      
 }
