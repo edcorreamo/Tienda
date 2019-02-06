@@ -9,7 +9,7 @@ package Data;
  *
  * @author Prometeo
  */
-public class IosGAlta extends Ios{
+public final class IosGAlta extends Ios{
     private String tipoDeSeguro;
     private String adicionales;
     private String colorEstuche;
