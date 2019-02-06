@@ -1,7 +1,7 @@
 //comentario
 package Data;
 //...
-public class Android extends Tablet{
+public abstract class Android extends Tablet{
     //
     float versionAndorid;
     int numeroDeSalidas;
