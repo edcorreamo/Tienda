@@ -10,6 +10,10 @@ package Data;
  * @author Prometeo
  */
 public final class IosGAlta extends Ios{
+
+    public static void keySet() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     private String tipoDeSeguro;
     private String adicionales;
     private String colorEstuche;

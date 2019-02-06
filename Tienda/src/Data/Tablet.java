@@ -68,5 +68,13 @@ public abstract class Tablet extends ArticuloElectronico{
     String cadena2="\nreferencia :"+getReferencia()+"\npantalla: "+getPantalla()+"\nEspaciales para lectura:"+getEspecialesParaLectura();
     return cadena1+cadena2;
     }
+
+    @Override
+    public void caro() {
+        super.caro(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("\nrecuerda que es solo una tablet");
+    }
+    
+    
     
 }

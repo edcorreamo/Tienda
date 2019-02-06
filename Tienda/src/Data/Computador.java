@@ -63,5 +63,13 @@ public abstract class Computador extends ArticuloElectronico{
         String cadena2= "\nTipo: "+getTipo()+"\nProcesador: "+getProcesador() +"\nRam: "+getRam()+"\nDisco Duro (GB: "+getDiscoDuro();
         return cadena1+cadena2;
 }
+
+    @Override
+    public void caro() {
+        super.caro();
+        System.out.println("recuerda que es un computador, es una buena inversion");
+//To change body of generated methods, choose Tools | Templates.
+    }
+    
       
 }

@@ -39,11 +39,11 @@ public abstract class ArticuloElectronico {
     return this.color;
     }
     
-    public String caro(float precio){
-        if(precio>=1000000){
-            return "es caro";
+    public void caro(){
+        if(this.precio>=1000000){
+            System.out.println("es caro, su precio es:"+this.getPrecio());
         }else {
-            return "no escaro";
+            System.out.println("es economico, compara su precio:"+this.getPrecio());
         }
     }
     

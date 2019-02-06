@@ -60,9 +60,10 @@ public class Tienda {
     IosGAlta ipadPro=new IosGAlta("seguro completo, hurto, perdida","nada adicional","rojo o blanco","IPAD PRO",6.2f,2018,12.0f,true,"IPAD","blanco","APPLE",1500000);
     IosGAlta pencil=new IosGAlta("seguro solo por pérdita total","bono de descuento en audifonos","blanco","IPAD Pencil",8.2f,2017,15.0f,true,"IPAD","blanco , o gris","APPLE",1300000);
     IosGAlta ios12=new IosGAlta("seguro completo, hurto, perdida y bono para cambio en dos años","protector de rayones","negro","IOS 12",7.5f,2018,8.0f,false,"IPAD","rojo","APPLE",1000000);
-    GamaAltaIOS.put("123",ipadPro);
-    GamaAltaIOS.put("321",pencil);
-    GamaAltaIOS.put("231",ios12);
+    GamaAltaIOS.put("1. Ipad Pro",ipadPro);
+    GamaAltaIOS.put("2. Ipad Pencil",pencil);
+    GamaAltaIOS.put("3. Ios12",ios12);
+    GamaAltaIOS.keySet();
    
     
     //By: Juan
@@ -125,9 +126,11 @@ public class Tienda {
     pcHogar.put("Opcion 2",acersr11);
     pcHogar.put("Opcion 3",lenovo520);
     
+    
        Imprimir.saludo();
        Imprimir.menu();
        
+          
        int q=0,p=0;
 
         do{
@@ -213,10 +216,26 @@ public class Tienda {
                         Imprimir.menu5();
                         k=Imprimir.leerPantalla();
                         switch(k){
-                            case 1:System.out.println("\nIOS gama alta:");
-                                   System.out.println("----------");
-                                   System.out.println(GamaAltaIOS);
-                                   System.out.println("---------\n");
+                            case 1:int l;                                 
+                                                             
+                                System.out.println("\nIOS gama alta, opciones disponibles:\n\n");                                   
+                                   System.out.println(GamaAltaIOS.keySet());     
+                                    System.out.println("4. opcion para salir");
+                                   System.out.println("---------\n");                                 
+                                   
+                                   l=Imprimir.leerPantalla();
+                                     
+                                   switch(l){
+                                       case 1:System.out.println(GamaAltaIOS.get("1. Ipad Pro"));
+                                       
+                                       break;
+                                       case 2:System.out.println(GamaAltaIOS.get("2. Ipad Pencil"));break;
+                                       case 3:System.out.println(GamaAltaIOS.get("3. Ios12"));break;
+                                       default:System.out.println("opcion incorrecta");
+                                       
+                                   
+                                   }
+                                  
                                    break;
                             case 2:System.out.println("\nIOS gama Media:");
                                    System.out.println("----------");
@@ -226,7 +245,7 @@ public class Tienda {
                             case 0: break;
                             default:System.out.println("Opcion Invalida");break; 
                         }      
-                  }while(k!=0);
+                  }while(k!=0&&k!=1);
                 case 0:break;
                    default:
                        System.out.println("Opcion Invalida");
@@ -243,8 +262,14 @@ public class Tienda {
             break;
         }
        }while(p!=0);
+        
+        
+        
  
      }   
- }
+
+   
+}
+ 
     
 
