@@ -1,7 +1,7 @@
 
 package Data;
 
-public class Computador extends ArticuloElectronico{
+public abstract class Computador extends ArticuloElectronico{
     
     private String procesador;
     private String ram ;
