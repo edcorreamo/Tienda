@@ -1,7 +1,7 @@
 
 package Data;
 
-public class ArticuloElectronico {
+public abstract class ArticuloElectronico {
    
     private String marca;
     private float precio;
