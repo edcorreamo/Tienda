@@ -1,7 +1,7 @@
 
 package Data;
 
-public class Portatil extends Computador {
+public abstract class Portatil extends Computador {
     String sOperativo;
     String peso;
     boolean unidadCD;
