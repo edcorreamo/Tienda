@@ -9,7 +9,7 @@ package Data;
  *
  * @author Prometeo
  */
-public class VersionNueva extends Android{
+public final class VersionNueva extends Android{
     private boolean dobleCamara;
     private String accesorios;
     private boolean recibeBono;

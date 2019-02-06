@@ -2,7 +2,7 @@
 package Data;
 
 
-public class PortatilGamer extends Portatil {
+public final class PortatilGamer extends Portatil {
     private String targetaGrafica;
    private int gigasdeVideo;
    private String tipodeSonido;

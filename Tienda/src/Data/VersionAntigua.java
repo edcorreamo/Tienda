@@ -6,7 +6,7 @@
 package Data;
 
 
-public class VersionAntigua extends Android{
+public final class VersionAntigua extends Android{
     private boolean enPromocion;;
     private String camaraFrontal;
     private boolean memoriaExterna;

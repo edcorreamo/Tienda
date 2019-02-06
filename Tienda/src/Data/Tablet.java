@@ -9,7 +9,7 @@ package Data;
  *
  * @author Prometeo
  */
-public class Tablet extends ArticuloElectronico{
+public abstract class Tablet extends ArticuloElectronico{
     private float pantalla;
     private boolean espacialesParaLectura;
     private String referencia;

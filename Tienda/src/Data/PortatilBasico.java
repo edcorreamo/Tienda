@@ -1,7 +1,7 @@
 
 package Data;
 
-public class PortatilBasico extends Portatil{
+public final class PortatilBasico extends Portatil{
    private int salidasUSB;
     private boolean salidaHDMI;
     private boolean salidaVGA;
