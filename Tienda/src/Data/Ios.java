@@ -6,7 +6,7 @@
 package Data;
 
 
-public class Ios extends Tablet {
+public abstract class Ios extends Tablet {
     String nombreComercial;
     float version;
     int anioLanzamiento;
