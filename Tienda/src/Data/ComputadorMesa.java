@@ -2,7 +2,7 @@
 package Data;
 
 
-public class ComputadorMesa extends Computador{
+public abstract class ComputadorMesa extends Computador{
    private boolean integrado;
    private String pantalla;
    private boolean tecladoEspecial;
