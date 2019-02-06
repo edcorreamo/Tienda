@@ -1,6 +1,5 @@
 
 package IU;
-
 import java.util.Scanner;
 
 

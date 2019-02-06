@@ -6,6 +6,7 @@ public abstract class ArticuloElectronico {
     private String marca;
     private float precio;
     private String color;
+
     
     public ArticuloElectronico(String color,String marca,float precio){
     setPrecio(precio);
@@ -46,7 +47,7 @@ public abstract class ArticuloElectronico {
             System.out.println("es economico, compara su precio:"+this.getPrecio());
         }
     }
-    
+    // public abstract void mensajeGratitud();
     
     @Override
     public String toString(){
