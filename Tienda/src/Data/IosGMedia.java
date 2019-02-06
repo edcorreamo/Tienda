@@ -1,7 +1,7 @@
 
 package Data;
 
-public class IosGMedia extends Ios {
+public final class IosGMedia extends Ios {
 
  
  private String bateria;
