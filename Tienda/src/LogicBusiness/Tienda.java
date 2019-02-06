@@ -1,21 +1,13 @@
 
 package LogicBusiness;
 import IU.Imprimir;
-import Data.ArticuloElectronico;
 
-import Data.Computador;
-import Data.Portatil;
 import Data.PortatilBasico;
 import Data.PortatilGamer;
-import Data.ComputadorMesa;
 import Data.ComputadoresHogar;
 import Data.ComputadoresOficina;
-
-import Data.Tablet;
-import Data.Ios;
 import Data.IosGAlta;
 import Data.IosGMedia;
-import Data.Android;
 import Data.VersionAntigua;
 import Data.VersionNueva;
 
@@ -23,6 +15,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.TreeMap;
+
 public class Tienda {
     public static void main(String[] args) { 
         
@@ -37,7 +30,7 @@ public class Tienda {
      VersionAntigua Huawei=new VersionAntigua(true,"4 mpx",true,  5.2f,2,true,6.4f,false,"hwawei pinrce D","negro","hwahwei",90000);
      VersionAntigua lenovoLegion=new VersionAntigua(true,"6 mpx",true,  6.9f,2,true,6.4f,true,"lenovo Legion","blanco","lenovo",130000); 
      androidAntiguos.add(Motorola3g);
-     androidAntiguos.add(Motorola3g);
+     androidAntiguos.add(Motorolad);
      androidAntiguos.add(Motorolat);
      androidAntiguos.add(Huawei);
      androidAntiguos.add(lenovoLegion);
@@ -76,8 +69,8 @@ public class Tienda {
     IosGMedia ipad= new IosGMedia("1200 mAh","5 MP",true,"iPad",7.2f,2011,1.0f,false,"IPAD","azul","APPLE",489000);
     IosGMedia ipad3= new IosGMedia("1300 mAh","8 MP",false,"iPad 3",8.1f,2012,1.0f,false,"IPAD","blanco","APPLE",634000);
     iosGamaMedia.add(ipadAir);
-    iosGamaMedia.add(ipad2);
     iosGamaMedia.add(ipad);
+    iosGamaMedia.add(ipad2);
     iosGamaMedia.add(ipad3);
  
     //HasSet Portatil Basico
@@ -128,24 +121,24 @@ public class Tienda {
     
     
        Imprimir.saludo();
-       Imprimir.menu();
-       
-          
-       int q=0,p=0;
+      
+     
+       int u, q,p,f,h,j;
 
         do{
+       
+        Imprimir.menu();    
         p=Imprimir.leerPantalla();
         switch(p){
             
         case 1: 
-               do{
-                   Imprimir.menu2();
+                 do{   u=1;
+                      Imprimir.menu2();
                       q=Imprimir.leerPantalla();                                   
             
-               switch(q){
-            case 1:
-                  int h;
-                  do{
+                switch(q){
+                     case 1:
+                     do{j=1;
                         Imprimir.menu7();
                         h=Imprimir.leerPantalla();
                         switch(h){
@@ -159,16 +152,18 @@ public class Tienda {
                                    System.out.println(pcOficina);
                                    System.out.println("---------\n");
                                    break;
-                            case 0: break;
+                            case 3:j=0; break;
+                            case 0:System.exit(0);
                             default:System.out.println("Opcion Invalida");break; 
                         }      
-                  }while(h!=0);
-            case 2:
-                  int i;
-                  do{
+                        }while(j!=0);
+                        break;
+                      case 2:
+                      do{
+                         j=1;
                         Imprimir.menu6();
-                        i=Imprimir.leerPantalla();
-                        switch(i){
+                        h=Imprimir.leerPantalla();
+                        switch(h){
                             case 1:System.out.println("\nComputadores Gamer:");
                                    System.out.println("----------");
                                    System.out.println(portatilesGamers);
@@ -179,96 +174,102 @@ public class Tienda {
                                    System.out.println(portatilesBasicos);
                                    System.out.println("---------\n");
                                    break;
-                            case 0:break;
+                            case 3:  j=0;break;
+                            case 0:System.exit(0);
                             default:System.out.println("Opcion Invalida");break; 
                         }      
-                  }while(i!=0);
-               }
-               }while(q!=0);
-               break;
+                        }while(j!=0);
+                        break;
+                      case 3: u=0; break;
+                      case 0: System.exit(0);
+                      default:System.out.println("Opcion Invalida");break;
+                  }}while(u!=0);
+                break; 
         case 2: 
-         Imprimir.menu3();
-            int g =Imprimir.leerPantalla();
-               switch(g){
-              case 1:
-                  int j;
-                  do{
+                 do{   u=1;
+                      Imprimir.menu3();
+                      q=Imprimir.leerPantalla();                                   
+            
+                switch(q){
+                     case 1:
+                     do{j=1;
                         Imprimir.menu4();
-                        j=Imprimir.leerPantalla();
-                        switch(j){
-                            case 1:System.out.println("\nversion antigua:");
+                        h=Imprimir.leerPantalla();
+                        switch(h){
+                            case 1:System.out.println("\nAndroid Antiguos:");
                                    System.out.println("----------");
-                                   System.out.println(androidAntiguos);
-                                   System.out.println("---------\n");
-                                   break;
-                            case 2:System.out.println("\nversion nueva:");
+                                   Imprimir.menu9();
+                                   f=Imprimir.leerPantalla();
+                                   for (int i = 0; i < androidAntiguos.size(); i++) {
+			           if(f==i){
+                                    System.out.println(androidAntiguos.get(i));
+                                    i=androidAntiguos.size();
+                                   }else if(f==6){
+                                    System.out.println(iosGamaMedia);
+                                    i=androidAntiguos.size();
+		                    }
+                                  }break; 
+                            case 2:System.out.println("\nAndroid Nuevos:");
                                    System.out.println("----------");
                                    System.out.println(androidNuevos);
                                    System.out.println("---------\n");
                                    break;
-                            case 0: break;
+                            case 3:j=0;break;
+                            case 0: System.exit(0);
                             default:System.out.println("Opcion Invalida");break; 
                         }      
-                  }while(j!=0);
-               case 2:
-                  int k;
-                  do{
+                        }while(j!=0);
+                      case 2:
+                      do{j=1;
                         Imprimir.menu5();
-                        k=Imprimir.leerPantalla();
-                        switch(k){
-                            case 1:int l;                                 
-                                                             
-                                System.out.println("\nIOS gama alta, opciones disponibles:\n\n");                                   
+                        h=Imprimir.leerPantalla();
+                        switch(h){
+                            case 1: 
+                                   System.out.println("\nIOS gama alta, opciones disponibles:\n\n");                                   
                                    System.out.println(GamaAltaIOS.keySet());     
-                                    System.out.println("4. opcion para salir");
+                                   System.out.println("4. opcion para salir");
                                    System.out.println("---------\n");                                 
-                                   
-                                   l=Imprimir.leerPantalla();
-                                     
-                                   switch(l){
-                                       case 1:System.out.println(GamaAltaIOS.get("1. Ipad Pro"));
-                                       
-                                       break;
+           
+                                   f=Imprimir.leerPantalla(); 
+                                   switch(f){
+                                       case 1:System.out.println(GamaAltaIOS.get("1. Ipad Pro")); break;
                                        case 2:System.out.println(GamaAltaIOS.get("2. Ipad Pencil"));break;
                                        case 3:System.out.println(GamaAltaIOS.get("3. Ios12"));break;
                                        default:System.out.println("opcion incorrecta");
                                        
-                                   
-                                   }
-                                  
+                                   } 
                                    break;
-                            case 2:System.out.println("\nIOS gama Media:");
+                            case 2:
+                                   System.out.println("\nIOS gama Media:");
                                    System.out.println("----------");
-                                   System.out.println(iosGamaMedia);
-                                   System.out.println("---------\n");
-                                   break;
-                            case 0: break;
+                                   Imprimir.menu8();
+                                   f=Imprimir.leerPantalla();
+                                   for (int i = 0; i < iosGamaMedia.size(); i++) {
+			           if(f==i){
+                                    System.out.println(iosGamaMedia.get(i));
+                                    i=iosGamaMedia.size();
+                                   }else if(f==5){
+                                    System.out.println(iosGamaMedia);
+                                    i=iosGamaMedia.size();
+		                    }
+                                  }break;       
+                            case 3:j=0;break;
+                            case 0:System.exit(0);
                             default:System.out.println("Opcion Invalida");break; 
                         }      
-                  }while(k!=0&&k!=1);
-                case 0:break;
-                   default:
-                       System.out.println("Opcion Invalida");
+                        }while(j!=0); break;
+                      case 3:u=0;break;
+                      case 0:System.exit(0);
+                      default:System.out.println("Opcion Invalida");break;
+                  }            
+                 }while(u!=0);
                        break;
-               }
-            
-               break;
-        case 0:
-              
-               break;
-       
         default:
-            System.out.println("Opción Invalida");
-            break;
+        System.out.println("Opción Invalida");
+                break;
         }
        }while(p!=0);
-        
-        
-        
- 
-     }   
-
-   
+     }    
 }
  
     

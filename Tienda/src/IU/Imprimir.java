@@ -84,7 +84,32 @@ public static void saludo(){
         System.out.println("|||||||||||||||||||||");
       
  }
+         public static void menu8(){
+        System.out.println("\n|||||||||||||||||||||");
+        System.out.println("Escoja con el producto que desea ver a detalle:");
+        System.out.println("1.IPAD AIR");
+        System.out.println("2.IPAD ONE");
+        System.out.println("3.IPAD TWO");
+        System.out.println("4.IPAD THREE");
+        System.out.println("5.VER TODOS");
+        System.out.println("0. Salir");
+        System.out.println("|||||||||||||||||||||");
+      
+ }
        
-    
+     public static void menu9(){
+        System.out.println("\n|||||||||||||||||||||");
+        System.out.println("Escoja con el producto que desea ver a detalle:");
+        System.out.println("1.MOTOROLA 3G");
+        System.out.println("2.MOTOROLA AD");
+        System.out.println("3.MOTOROLA AT");
+        System.out.println("4.HUAWEI");
+        System.out.println("5.LENOVO LEGION");
+        System.out.println("6.VER TODOS");
+        System.out.println("0. Salir");
+        System.out.println("|||||||||||||||||||||");
+      
+ }
+       
     
 }
