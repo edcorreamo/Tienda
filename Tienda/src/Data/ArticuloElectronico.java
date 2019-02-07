@@ -47,7 +47,8 @@ public abstract class ArticuloElectronico {
             System.out.println("es economico, compara su precio:"+this.getPrecio());
         }
     }
-    // public abstract void mensajeGratitud();
+    
+    public abstract void mensajeGratitud();
     
     @Override
     public String toString(){

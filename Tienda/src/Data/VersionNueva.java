@@ -65,6 +65,7 @@ public boolean getRecibeBono(){
 return this.recibeBono;
 }
 
+
 @Override
 public String toString(){
 String cadena1=super.toString();
@@ -72,4 +73,9 @@ String cadena="\nel celular tiene doble camara: "+getDobleCamara()+"\ncontiene l
 return cadena1+cadena;
 }
     
+@Override
+    public void mensajeGratitud(){
+        System.out.println("Sus días se volveran mucho mas intensos con la compañia de esta tremenda tablet. \nEstamos siempre a la orden para prestarle el mejor servicio");
+    }
+   
 }

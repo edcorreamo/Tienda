@@ -64,7 +64,11 @@ return this.memoriaExterna;
     return cadena1+cadena;
     }
         
-
+@Override
+    public void mensajeGratitud(){
+        System.out.println("Esta tablet le permitirá que cada experiencia con ella sea inolvidable. \nRegrese pronto a la mejor tienda de articulos electronicos");
+    }
+    
 
 
 

@@ -78,7 +78,10 @@ public final class IosGAlta extends Ios{
     return cadena1+cadena2;
     }
     
-    
+    @Override
+    public void mensajeGratitud(){
+        System.out.println("Ahora podra tener en sus manos una de las mejores tablet que ofrece iOS al mercado. \nNo olvide disfrutarla al maximo y contactarnos para sus futuras compras");
+    }
     
             
 }

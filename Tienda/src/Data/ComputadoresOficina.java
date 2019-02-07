@@ -56,5 +56,8 @@ public final class ComputadoresOficina extends ComputadorMesa {
         return cadena+cadena2+cadena3;
     }
     
-    
+    @Override
+    public void mensajeGratitud(){
+        System.out.println("Ha hecho la mejor adquisicion para su empresa!! \nEsperamos que disfrute su compra y vuelva con nosotros!!");
+    }
 }

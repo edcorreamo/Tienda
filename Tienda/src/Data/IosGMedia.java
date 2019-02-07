@@ -60,4 +60,8 @@ public final class IosGMedia extends Ios {
  
     }
     
+    @Override
+    public void mensajeGratitud(){
+        System.out.println("Con su nueva tablet ahora podra gozar del mejor sistema operativo movil disponible. \nGracias por confiar en nosotros");
+    }
 }

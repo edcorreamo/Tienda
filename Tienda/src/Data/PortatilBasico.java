@@ -59,4 +59,8 @@ public final class PortatilBasico extends Portatil{
  
     }  
 
+    @Override
+    public void mensajeGratitud(){
+        System.out.println("Esperamos que haya disfrutado del servicio que le hemos prestado. \nSu nuevo portatil permitira que usted haga sus tareas con la mejor calidad");
+    }
 }

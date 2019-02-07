@@ -53,4 +53,10 @@ public final class PortatilGamer extends Portatil {
     return cadena1+cadena2;
  
     }  
+    
+    @Override
+    public void mensajeGratitud(){
+        System.out.println("Ahora sí podrá tener las mejores experiencias con los videojuegos. \nGracias por su compra. Vuelva pronto");
+    }
 }
+
