@@ -12,11 +12,6 @@ public final class ComputadoresHogar extends ComputadorMesa {
         setForro(forro);
         setParlantesIncluidos(parlantesIncluidos);
     }
-    
-    @Override
-    public void mensajeGratitud(){
-        System.out.println("Gracias por confiar en nosotros para comprar su nuevo computador para el hogar.\nAhora se facilitaran sus tareas domesticas y la vida de su familia");
-    }
 
     public ComputadoresHogar (boolean promocionConImpresora, boolean forro, boolean parlantesIncluidos){
         setPromocionConImpresora(promocionConImpresora);
@@ -61,7 +56,10 @@ public final class ComputadoresHogar extends ComputadorMesa {
         return cadena+cadena2+cadena3;
     }
     
-    
+    @Override
+    public void mensajeGratitud(){
+        System.out.println("Gracias por confiar en nosotros para comprar su nuevo computador para el hogar.\nAhora se facilitaran sus tareas domesticas y la vida de su familia");
+    }
     
 }
 
