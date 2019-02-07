@@ -2,6 +2,7 @@
 package LogicBusiness;
 import IU.Imprimir;
 
+
 import Data.PortatilBasico;
 import Data.PortatilGamer;
 import Data.ComputadoresHogar;
@@ -92,11 +93,11 @@ public class Tienda {
     PortatilGamer portatilHP=new PortatilGamer("NVIDIA GeForce MX110",4,"No definido","Windaws 10","2000gr",false, " Intel Core i5","8 GB ",1024,"HP 15-da0011la","Negro","HP",1749000.0f);
     PortatilGamer portatilLenovo2=new PortatilGamer("NVIDIA GeForce GTX 1050",4,"No definido","Windows 10","2050gr",true, "Intel i7-7700HQ","16 GB",2048,"Legion Y520 Gaming","Rojo","LENOVO",4497000.0f);
     PortatilGamer portatilAsus2=new PortatilGamer("NVIDIA GeForce GTX 1050 ",4,"No definido","Windows 10","1900gr",true,"Intel Core i5","8 GB",1024,"ASUS TUF Gaming FX504","Negro","ASUS",3190000.0f);
-    portatilesGamers.put(portatilAcer.getMarca()+portatilAcer.getPeso(),portatilAcer);
-    portatilesGamers.put(portatilHP.getMarca()+portatilHP.getPeso(),portatilHP);
-    portatilesGamers.put(portatilLenovo2.getMarca()+portatilLenovo2.getPeso(),portatilLenovo2);
-    portatilesGamers.put(portatilAsus2.getMarca()+portatilAsus2.getPeso(),portatilAsus2);
-    
+    portatilesGamers.put(portatilAcer.getMarca(),portatilAcer);
+    portatilesGamers.put(portatilHP.getMarca(),portatilHP);
+    portatilesGamers.put(portatilLenovo2.getMarca(),portatilLenovo2);
+    portatilesGamers.put(portatilAsus2.getMarca(),portatilAsus2);
+    portatilesGamers.keySet();
     
     //By: Carlos
     // Computadores de Oficina
@@ -143,6 +144,7 @@ public class Tienda {
                         h=Imprimir.leerPantalla();
                         switch(h){
                             case 1:System.out.println("\nComputadores para el hogar:");
+                                   
                                    System.out.println("----------");
                                    System.out.println(pcHogar);
                                    System.out.println("---------\n");
@@ -165,11 +167,22 @@ public class Tienda {
                         h=Imprimir.leerPantalla();
                         switch(h){
                             case 1:System.out.println("\nComputadores Gamer:");
-                                   System.out.println("----------");
-                                   System.out.println(portatilesGamers);
-                                   System.out.println("---------\n");
+                                   System.out.println(portatilesGamers.keySet());
+                                   System.out.println("  1     2     3    4");    
+                                   System.out.println("5. opcion para salir");
+                                   System.out.println("---------\n");                                 
+           
+                                   f=Imprimir.leerPantalla(); 
+                                   switch(f){
+                                       case 1:System.out.println(portatilesGamers.get("ACER")); break;
+                                       case 2:System.out.println(portatilesGamers.get("HP"));break;
+                                       case 3:System.out.println(portatilesGamers.get("LENOVO"));break;
+                                       case 4:System.out.println(portatilesGamers.get("ASUS"));
+                                       default:System.out.println("opcion incorrecta");
+                                       
+                                   } 
                                    break;
-                            case 2:System.out.println("\nComputadores Basico:");
+                                   case 2:System.out.println("\nComputadores Basico:");
                                    System.out.println("----------");
                                    System.out.println(portatilesBasicos);
                                    System.out.println("---------\n");
